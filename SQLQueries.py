@@ -17,3 +17,7 @@ def insert_data(table, columns, data):
                     VALUES
                     {data}"""
     return COMMAND
+
+def get_all_data(name):
+    COMMAND = fr"""SELECT * FROM {name}"""
+    return COMMAND
