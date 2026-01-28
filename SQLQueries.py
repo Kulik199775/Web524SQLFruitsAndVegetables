@@ -11,3 +11,9 @@ def create_table(name):
                 Калорийность int,
                 Краткое описание nvarchar(100)"""
     return COMMAND
+
+def insert_data(table, columns, data):
+    COMMAND = fr"""INSERT INTO {table} {columns}
+                    VALUES
+                    {data}"""
+    return COMMAND
